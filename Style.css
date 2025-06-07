@@ -1,0 +1,220 @@
+*{
+    margin :0;
+    padding :0;
+    font-family:'Poppins',sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+    background-color :#0000a1f;
+}
+
+.header{
+position: fixed;
+top     : 0;
+left    : 0;
+z-index : 500;
+width   :100%;
+height  :90px;
+background-image :url('avengers.jpeg');
+background-repeat: repeat-x;
+}
+   
+#tabs-bottom{
+position : fixed;
+bottom   : 0;
+left     : 0;
+z-index  : 500;
+width    : 100%;
+height   : 70px;
+background-color: red;
+}
+
+#tabs-bottom a{
+float : center;
+display : block;
+width : 50%;
+height : 35px;
+font-weight : 700;
+color       : white;
+text-align  : center;
+text-decoration : none;
+padding-top     : 20px;
+}
+.container2{
+    margin:100px 0 0 200px;
+    width:30%;
+    height:450px;
+    display :flex;
+    justify-content: center ;
+    gap:10px; 
+}
+
+.container2 img{
+    width:5%;
+    height :100%;
+    object-fit:cover;
+    border-radius:10px;
+    border:2px solid #rgha;
+    transition :all ease-in-out 0.5s;
+}
+
+.container2 img:hover{
+    width:25%
+}
+
+nav{
+    display :flex;
+    align-items: center ;
+    justify-content: space between ;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width:80px;
+}
+
+nav ul li{
+    display :inline-block;
+    list-style:none;
+    margin :10px 20px;
+}
+
+nav ul li{
+    display :inline-block;
+    list-style:none;
+    margin :10px 20px;
+}
+
+nav ul li a{
+    color :#fff;
+    text-decoration:none;
+    font-size:18px;
+    position :relative;
+}
+
+nav ul li a::after {
+    content :'';
+    width :0;
+    height :3px;
+    background: #ff0049ff001f;
+    position : absolute ;
+    left:0;
+    bottom :-6px;
+    transition :0.5s;
+}
+
+nav ul li a:hover::after{
+    width :100%;
+}
+
+.header-text{
+    margin-top:20%;
+    font-size:30px;
+}
+
+.header-text h1{
+    font-size:60px;
+    margin-top:20px;
+}
+
+.header-text h1 span{
+    color : #ff004f;
+}
+
+ #about{
+    padding :40px 0;
+    color :#ababab;
+    align-items: center ;
+}
+
+.row{
+    display :flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis:35%;
+}
+
+.about-col-1 img{
+    width:100%;
+    border-radius:15px;
+}
+
+.about-col-2{
+    flex-basis:60%;
+}
+
+.sub-title{
+    font-size:40px;
+    font-weight:200;
+    color :#ffffff;
+}
+
+.tab-title{
+    display :flex;
+    margin :10px 0 20px;
+}
+
+.tab-links{
+    margin-left:50px;
+    font-size:18px;
+    font-weight:500;
+    cursor:pointer;
+    position :relative;
+}
+
+.tab-links::after{
+    content:'';
+    width:0;
+    background:#ff004f;
+    position: absolute;
+    left:0;
+    bottom:-8px;
+    transition:0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style:none;
+    margin:10px 0;
+}
+
+.tab-contents ul li span{
+    color:#ff004f;
+    font-size:14px;
+}
+
+#heros{
+    padding: 30px 0;
+}
+
+.hero-list{
+    display:grid;
+    grid-template colums:repeat(auto-fit, minmax(250px, 1fx));
+    grid-gap:40px;
+    margin-top:50px;
+}
+
+#d-flex{
+    display:flex;
+}
+
+img,p{
+    padding: 5px;
+}
+
+p{
+    text-align: left;
+    color: blue;
+}
+
+.img{
+    padding:0 15px;
+    float: right;
+}
